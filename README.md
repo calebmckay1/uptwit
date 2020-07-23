@@ -26,3 +26,11 @@ FLASK_APP=web_app flask db migrate
 FLASK_APP=web_app flask db upgrade
 
 had to connect to the database DATABASE_URL = "sqlite:///db_name.db"
+
+had to run 
+'''heroku bash run
+'''
+then 
+'''
+git push heroku master
+'''
