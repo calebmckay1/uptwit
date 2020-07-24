@@ -29,3 +29,14 @@ Now i just have to train the predictive model, then deploy the app. View
 the readme for more info on commands to run 
 
 for some reason when i use my username to predict, it throws error that user has no twets lol
+
+
+Ask about database entry of if we just pull it directly from the twitter API
+
+in order to make the postgresql database work i had to run 
+'''
+heroku run bash
+FLASK_APP=web_app flask db init
+FLASK_APP=web_app flask db migrate
+FLASK_APP=web_app flask db upgrade
+'''
